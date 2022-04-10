@@ -40,6 +40,7 @@ cat [filename]
 cat [filename] | less
 cat [filename] | more
 cat > 1.txt << EOF
+EOF
 head -n 20 [filename]
 tail -f [filename]		# 实时刷新
 cat [filename] | tr [a-z] [A-Z] # 文本替换

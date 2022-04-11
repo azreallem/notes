@@ -175,7 +175,7 @@ FreeMem=$?
 [ $FreeMem -lt 1024 ] && echo "Insufficient Memory"
 ```
 
-> notes: awk `{print $4}`表示只保留第4列，FreeMem=$?赋值语句等号左右两边没有空格。
+> notes: `awk \`{print $4}\``表示只保留第4列，`FreeMem=$?`赋值语句等号左右两边没有空格。
 
 | 运算符 | 作用 |
 | ------ | ---- |

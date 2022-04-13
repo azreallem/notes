@@ -2,8 +2,8 @@
 ## vim打开多窗口、多文件
 ```bash
 vim file1 file2
-vim -On file1 file2	# 垂直打开
-vim -on file1 file2	# 水平打开
+vim -On file1 file2 # 垂直打开
+vim -on file1 file2 # 水平打开
 vimdiff file1 file2
 ```
 
@@ -22,14 +22,15 @@ e/b			# move the word of end/begin
 %			# 跳到括号匹配处
 
 z			# 将当前行移动到屏幕的中间
-zt 			# 将当前行移到屏幕顶部
-zb 			# 将当前行移到屏幕底部
+zt			# 将当前行移到屏幕顶部
+zb			# 将当前行移到屏幕底部
 ZZ			# 保存并退出
+ZQ			# 不保存退出
 gf			# 打开头文件
 gt			# goto next tab
 gT			# goto prev tab
-[[ 			# 跳转至上一个函数
-]] 			# 跳转至下一个函数
+[[			# 跳转至上一个函数
+]]			# 跳转至下一个函数
 x			# delete char
 dw			# delete word
 dd			# delete line
@@ -50,8 +51,8 @@ u			# 撤销
 <C-x>			# sub 1
 <C-r>			# 撤销回退
 <C-n>			# 代码补全
-<C-w-s>     		# 水平新建窗口
-<C-w-v>     		# 垂直新建窗口
+<C-w-s>				# 水平新建窗口
+<C-w-v>				# 垂直新建窗口
 <C-g>			# 显示文件信息
 <C-o>			# 回到上次打开的文件
 ```
@@ -59,8 +60,8 @@ u			# 撤销
 # insert mode
 ```bash
 :e file2		# 当前窗口打开
-:sp file2 		# 水平切分窗口
-:vsp file2 		# 垂直切分窗口
+:sp file2		# 水平切分窗口
+:vsp file2		# 垂直切分窗口
 
 :ls			# list open files
 :bn			# switch file-n
@@ -75,7 +76,24 @@ u			# 撤销
 
 :5,15s/dog/cat/g	# 替换行内字符串
 :%s/dog/cat/g
+
+:m,n>			# 向>缩进
+:m,n<			# 向<缩进
+:%retab!		# tab <-> 空格
 ```
+## tab <-> space
+```bash
+# TAB替换为空格：
+:set ts=4
+:set expandtab
+:%retab!
+
+# 空格替换为TAB：
+:set ts=4
+:set noexpandtab
+:%retab!
+```
+
 
 ## 设置空格或回车可见
 ```bash

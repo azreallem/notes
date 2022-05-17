@@ -42,3 +42,12 @@ killall -u gaoliang
 cat filename | tail -n +3000 | head -n 1000
 ```
 
+# gpu
+```bash
+sudo minicom -s
+
+systemctl start lightdm
+lsmod
+
+glmark2
+```

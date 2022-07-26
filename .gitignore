@@ -1,6 +1,5 @@
 # file
 *.swp
+*work*
+*log*
 
-# dir
-/work
-/pic

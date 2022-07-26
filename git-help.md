@@ -11,3 +11,7 @@ git push origin HEAD:refs/for/uos-dev-3.1.0
 git checkout e85be088dd4023edaa target/loongarch/helper.c 
 # patch有冲突时
 git apply –reject xxx.patch
+
+git log -L :cpu_loongarch_virt_to_phys:hw/loongarch/larch_2k500.c
+
+cat .git/config

@@ -12,11 +12,17 @@ gdb attatch 243591
 gdb --args ...
 -gdb tcp::2730
 -S
+
+# gdb set env
+env -i ... \
+gdb
 ```
 
 
 ```bash
 target remote : 2730
+
+show env
 
 b *0xa09d4000
 tb a.c:15

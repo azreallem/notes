@@ -45,37 +45,24 @@ pkill -u gaoliang
 killall -u gaoliang
 
 # 从第3000行开始，显示1000行。即显示3000~3999行
-cat filename | tail -n +3000 | head -n 1000
+cat filename | tail -n 3000 | head -n 1000
+
+# 后台运行
+nohup [command] &
+pgrep -a [command]       # all the processes associated with the command.
 ```
 
-## gpu
+## OS
 ```bash
-sudo minicom -s
-
-systemctl start lightdm
-lsmod
-
-glmark2
+getconf PAGE_SIZE
 ```
 
-
-## cscope
+## fdisk
 ```bash
-cscope -Rbq
-file cscope.out
-:cs add {file|dir} [pre-path] [flags]
-cs find {querytype} {name}
-#0或s：查找这个(指name参数，下同)C符号。
-#1或g：查找这个定义。
-#2或d：查找被这个函数调用的函数。
-#3或c：查找调用该函数的函数。
-#4或t：查找这个文本字符串。
-#6或e: 查找这个egrep的pattern。
-#7或f：查找这个文件。
-#8或i：查找#include了这个文件的所有文件。
+fdisk /dev/sda
+
+mkfs.ext4 /dev/sdb
+vim /etc/fstab
 ```
 
-## shell
-```bash
-nohup [filename].sh &      # 后台运行
-```
+[lvm参考](https://link.segmentfault.com/?enc=cx6JzIz4b89CBu%2BN8tIAIQ%3D%3D.7PpYyeW%2BOPf88oUh3N4V34GpWu6ftE66u7YfH2Uv2n6hMxRXhiNtFVc8ZZMaGllP0KXHNeaszdd0cuui9ZmseQ%3D%3D)

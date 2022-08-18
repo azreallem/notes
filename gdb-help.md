@@ -66,11 +66,13 @@ bt
 
 ./work/toolchain/install/bin/loongarch32-linux-gnu-objdump -d vmlinux > a.txt
 ~/work/toolchain/install/bin/loongarch32-linux-gnu-gcc fork.c -o init --static
-l #list
+
+# list
+l
 
 layout n
-Ctrl + L：刷新窗口
-Ctrl + x，再按a：回到传统模式，即退出layout，回到执行layout之前的调试窗口。
+#<C-L>   刷新窗口
+#<C-x-a> 回到传统模式，即退出layout，回到执行layout之前的调试窗口。
 fs n
 winheight src -5
 winheight asm -5

@@ -1,5 +1,4 @@
-# bash
-## vim打开多窗口、多文件
+# vim open mult windows and files
 ```bash
 vim file1 file2
 vim -On file1 file2 # 垂直打开
@@ -7,7 +6,7 @@ vim -on file1 file2 # 水平打开
 vimdiff file1 file2
 ```
 
-## only read mode 
+# only read mode 
 ```bash
 view file1
 ```
@@ -46,7 +45,7 @@ $			# 光标移到行末
 J           # 去掉该行的换行符
 
 
-<C-e> / <C-y>		# 屏幕向下(上)移动一行
+<C-e> / <C-y>	# 屏幕向下(上)移动一行
 <C-w-w>			# switch window
 <C-w-r>			# swap window
 
@@ -88,6 +87,7 @@ J           # 去掉该行的换行符
 :m,n<			# 向<缩进
 :%retab!		# tab <-> 空格
 ```
+
 ## tab <-> space
 ```bash
 # TAB替换为空格：
@@ -108,7 +108,8 @@ J           # 去掉该行的换行符
 :set listchars=tab:>~,trail:.
 ```
 
-# others
+# plugins
+
 ## 折叠相关
 ```bash
 z f %		# 折叠
@@ -116,9 +117,7 @@ z o			# 展开
 z c			# 折叠
 ```
 
-
-## plugins
-### vim-markdown
+## vim-markdown
 - zr: reduces fold level throughout the buffer
 - zR: opens all folds
 - zm: increases fold level throughout the buffer
@@ -128,18 +127,18 @@ z c			# 折叠
 - zc: close a fold your cursor is on
 - zC: close a fold your cursor is on recursively
 
-## OS
+## cscope
 ```bash
-getconf PAGE_SIZE
-
+cscope -Rbq
+file cscope.out
+:cs add {file|dir} [pre-path] [flags]
+cs find {querytype} {name}
+#0或s：查找这个(指name参数，下同)C符号。
+#1或g：查找这个定义。
+#2或d：查找被这个函数调用的函数。
+#3或c：查找调用该函数的函数。
+#4或t：查找这个文本字符串。
+#6或e: 查找这个egrep的pattern。
+#7或f：查找这个文件。
+#8或i：查找#include了这个文件的所有文件。
 ```
-
-
-## fdisk
-```bash
-fdisk /dev/sda
-
-mkfs.ext4 /dev/sdb
-vim /etc/fstab
-```
-[lvm参考](https://link.segmentfault.com/?enc=cx6JzIz4b89CBu%2BN8tIAIQ%3D%3D.7PpYyeW%2BOPf88oUh3N4V34GpWu6ftE66u7YfH2Uv2n6hMxRXhiNtFVc8ZZMaGllP0KXHNeaszdd0cuui9ZmseQ%3D%3D)

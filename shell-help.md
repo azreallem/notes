@@ -77,5 +77,5 @@ cs find {querytype} {name}
 
 ## shell
 ```bash
-nohup programmer &      # 后台运行
+nohup [filename].sh &      # 后台运行
 ```

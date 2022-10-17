@@ -24,6 +24,7 @@ grep -Iinr "str" ./
 grep -Inr "cbs" --include=*{c,cpp}
 grep -Inr "cbs" --exclude=*{c,cpp}
 grep -F "tab \\\\"
+grep "\(.*\)"  # grep (string)
 
 
 # 替换目录下文件中的字符串
@@ -50,6 +51,9 @@ cat filename | tail -n 3000 | head -n 1000
 # 后台运行
 nohup [command] &
 pgrep -a [command]       # all the processes associated with the command.
+
+# mkdir
+mkdir -p ~/.vim/pack/airblade/start     # make multi level dir
 ```
 
 ## OS

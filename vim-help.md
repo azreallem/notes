@@ -50,6 +50,7 @@ J           # 去掉该行的换行符
 <C-w-r>			# swap window
 
 <C-a>			# add 1
+Shift + V <C-g-a>
 <C-x>			# sub 1
 <C-r>			# 撤销回退
 <C-n>			# 代码补全
@@ -57,6 +58,10 @@ J           # 去掉该行的换行符
 <C-w-v>			# 垂直新建窗口
 <C-g>			# 显示文件信息
 <C-o>			# 回到上次打开的文件
+
+
+/\cv_mov_b32_e32    # 忽略大小写
+/[char]\+           # 匹配多个字符
 ```
 
 # insert mode
@@ -108,13 +113,40 @@ J           # 去掉该行的换行符
 :set listchars=tab:>~,trail:.
 ```
 
+# visual mode
+```text
+<C-v> select chars, <yy> to copy, and then use <C-v> and <p> to put it.
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # plugins
 
 ## 折叠相关
 ```bash
-z f %		# 折叠
-z o			# 展开
-z c			# 折叠
+z f %		# 折叠 fold %
+z o			# 展开 open
+z c			# 折叠 close
 ```
 
 ## vim-markdown
@@ -142,3 +174,11 @@ cs find {querytype} {name}
 #7或f：查找这个文件。
 #8或i：查找#include了这个文件的所有文件。
 ```
+
+## gitgutter
+> [c
+> ]c
+> :GitGutterToggle
+> :GitGutterDiffOrig
+> :GitGutterQuickFix
+> :copen

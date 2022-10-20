@@ -1,4 +1,7 @@
-# 常用命令
+# SHELL Notes
+
+## 常用命令
+
 ```bash
 # 2>&1 其中2表示错误输出，输入到标准输出1中。
 ls readme.txt 1.txt >out.log 2>&1
@@ -56,12 +59,14 @@ pgrep -a [command]       # all the processes associated with the command.
 mkdir -p ~/.vim/pack/airblade/start     # make multi level dir
 ```
 
-## OS
+### OS
+
 ```bash
 getconf PAGE_SIZE
 ```
 
-## fdisk
+### fdisk
+
 ```bash
 fdisk /dev/sda
 

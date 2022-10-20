@@ -1,9 +1,14 @@
-# gdb
-```
+# GDB Notes
+
+## notes
+
+```text
 <C-L>                   # clear screen
 (gdb) p /x *p@100       # print array of length
 ```
-### terminal
+
+## terminal
+
 ```bash
 # gdb qemu
 gdb attatch 243591
@@ -18,8 +23,7 @@ env -i ... \
 gdb
 ```
 
-
-```bash
+```Bash
 target remote : 2730
 
 show env
@@ -79,14 +83,13 @@ winheight asm -5
 winheight cmd -5
 ```
 
-
 > s 相当于其它调试器中的“Step Into (单步跟踪进入)”；
+>
 > n 相当于其它调试器中的“Step Over (单步跟踪)”
 > si命令类似于s命令，ni命令类似于n命令。所不同的是，这两个命令（si/ni）所针对的是汇编指令，而s/n针对的是源代码。
 
-
-
 常见的输出格式
+
 - x: 十六进制格式
 - d：有符号的十进制整数格式
 - u：无符号的十进制整数格式
@@ -95,8 +98,8 @@ winheight cmd -5
 - c：字符格式
 - f：浮点数格式
 
+## thread
 
-# thread
 ```bash
 info thread
 thread ID

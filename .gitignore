@@ -1,5 +1,4 @@
 # file
 *.swp
-*work*
-*log*
+work/
 

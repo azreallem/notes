@@ -21,7 +21,7 @@ Scalar ALU (SALU) instructions operate
 the Scalar Condition Code bit (SCC)
 
 |            | Description                         |
-|-------------|--------------------------------------|
+|------------:|-------------------------------------:|
 | **OP**     | Opcode: instruction to be executed. |
 | **SDST**   | Destination SGPR.                   |
 | **SSRC0**  | First source operand.               |
@@ -41,5 +41,3 @@ Clamp output (钳制输出)：
 > 这个功能勾上就可以了，不用改数值；
 
 **DAG**: LLVM uses DAG—a directed acyclic graph representation for code generation.
-
-:::image type="content" source="pic/download.jpeg" alt-text="kenan" loc-scope="active-directory":::

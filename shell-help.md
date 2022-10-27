@@ -42,6 +42,7 @@ tar -xvf filename.tar.gz
 
 # 索引
 ctags -R
+cscope -Rbq
 
 # kill
 ps -aux | grep gaoliang
@@ -69,9 +70,21 @@ getconf PAGE_SIZE
 
 ```bash
 fdisk /dev/sda
-
 mkfs.ext4 /dev/sdb
 vim /etc/fstab
 ```
 
 [lvm参考](https://link.segmentfault.com/?enc=cx6JzIz4b89CBu%2BN8tIAIQ%3D%3D.7PpYyeW%2BOPf88oUh3N4V34GpWu6ftE66u7YfH2Uv2n6hMxRXhiNtFVc8ZZMaGllP0KXHNeaszdd0cuui9ZmseQ%3D%3D)
+
+### objdump
+
+```bash
+objdump -tTd xxx.so
+```
+
+### mount / umount
+
+```bash
+sudo mount /dev/sdb1 ~/new
+sudo umount ~/new
+```

@@ -1,4 +1,6 @@
-# content
+# LLVM Tablegen Grammer
+
+## content
 
 tblgen 由``*.td``文件生成``*.inc``文件。
 
@@ -7,14 +9,16 @@ cd lib/Target/AMDGPU
 ../../../build/bin/llvm-tblgen AMDGPU.td -I=/home/loongson/work/gpu/llvm-toolchain-8-8.0.1/llvm/include
 ```
 
-## Value
+### Value
+
 ``类型 + 值名字``
 
 ```
 string Greeting = "hello";
 ```
 
-## let
+### let
+
 ``let + 值名字 = 新的值内容``
 
 ```
@@ -24,26 +28,26 @@ def Z : D;
 
 > 这个例子中，父类C中包含的V值在子类D中被重新赋值为0，而Z是D的实现，从而Z中的V值的内容为0。
 
-# class and def
+## class and def
 
 ```
 class C { bit V = 1; }
 def X : C;
 def Y : C {
-	string Greeting = "hello";
+ string Greeting = "hello";
 }
 ```
 
 > 这个例子中定义了两条记录：X和Y，这两条记录具有相同的信息V，所以用了一个类C来实现共有部分，同时，还扩展了记录Y，使它多了一个Greeting的字符串。
 
-## class template
+### class template
 
 ```
 class FPFormat<bits<3> val> {
-	bits<3> Value = val;
+ bits<3> Value = val;
 }
-def NotFP 		: FPFormat<0>;
-def ZeroFP 		: FPFormat<1>;
+def NotFP   : FPFormat<0>;
+def ZeroFP   : FPFormat<1>;
 def OneArgFP    : FPFormat<2>;
 def OneArgFPRW  : FPFormat<3>;
 def TwoArgFP    : FPFormat<4>;
@@ -81,7 +85,6 @@ def zork : Value<Ref>;
 def hork : Value<ModRef>;
 ```
 
-
 **test on terminal**:
 
 ```bash
@@ -105,7 +108,8 @@ def zork {      // Value
 }
 ```
 
-## multiclass
+### multiclass
+
 multiclass并不是指多个类，而是指用一个类结构来实现多个类的功能。
 
 ```
@@ -205,7 +209,7 @@ def InstrSSrr {
 }
 ```
 
-# let
+#### let
 
 ``let ... in { ... }``表示把多个记录包含在大括号内。
 
@@ -226,7 +230,7 @@ let isCall = 1 in
 
 > Let表达式在文件内经常用于在一系列的记录中增加一些定义，这些记录不需要被展开，就像上例中，那几个CALL指令，没有展开即加入了``isCall=1``和``Defs=[…]``的定义属性。
 
-# foreach
+#### foreach
 
 ```
 foreach i = [0, 1, 2, 3] in {

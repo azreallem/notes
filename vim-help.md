@@ -182,14 +182,14 @@ cscope -Rbq
 file cscope.out
 :cs add {file|dir} [pre-path] [flags]
 cs find {querytype} {name}
-#0或s：查找这个(指name参数，下同)C符号。
-#1或g：查找这个定义。
-#2或d：查找被这个函数调用的函数。
-#3或c：查找调用该函数的函数。
-#4或t：查找这个文本字符串。
-#6或e: 查找这个egrep的pattern。
-#7或f：查找这个文件。
-#8或i：查找#include了这个文件的所有文件。
+# 0或s：查找这个(指name参数，下同)C符号。
+# 1或g：查找这个定义。
+# 2或d：查找被这个函数调用的函数。
+# 3或c：查找调用该函数的函数。
+# 4或t：查找这个文本字符串。
+# 6或e: 查找这个egrep的pattern。
+# 7或f：查找这个文件。
+# 8或i：查找#include了这个文件的所有文件。
 ```
 
 ### gitgutter

@@ -6,7 +6,7 @@
 
 ```bash
 vim file1 file2
-vim -On file1 file2 # 垂直打开
+vim -On file1 file2 # 垂直打开 :vsp
 vim -on file1 file2 # 水平打开
 vimdiff file1 file2
 ```
@@ -25,9 +25,23 @@ view file1
 h/j/k/l
 w/W/b/B
 e/E/ge/gE
+f/t{character}    # (find) to move to the next occurrence of a character in a line.
+F/T{character}    # to find the previous occurrence of a character
+             # type fdfdfd ==> v   v               v        v
+             #                 let damage = weapon.damage * d20();
+             #                 let damage = weapon.damage * d20();
+             # type fd;;   ==> v   v               v        v
+
 0            # 光标移到行首
 $            # 光标移到行末
-%            # 光标跳到括号匹配处
+}            # jumps entire paragraphs downwards
+{            # similarly but upwards
+gd           # Go to Definition of whatever is under your cursor.
+gf           # Go to a File in an import.
+gg           # to go to the top of the file.
+{line}gg     # to go to a specific line.
+G            # to go to the end of the file.
+%            # jump to matching `({[]})`.
 ''           # 光标回到上一次的位置
 [[           # 跳转至上一个函数
 ]]           # 跳转至下一个函数

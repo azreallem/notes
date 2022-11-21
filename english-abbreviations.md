@@ -41,3 +41,7 @@ Clamp output (钳制输出)：
 > 这个功能勾上就可以了，不用改数值；
 
 **DAG**: LLVM uses DAG—a directed acyclic graph representation for code generation.
+
+## VPU
+
+VPU: vision processing unit

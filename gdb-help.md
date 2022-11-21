@@ -58,9 +58,7 @@ gdb
 (gdb) enable 1
 
 # print
-(gdb) p /x ...
-(gdb) p /x *...
-(gdb) print *(int *)point@10
+(gdb) p *(int *)point@10
 
 (gdb) info reg
 (gdb) x /32i 0x00fd0000
@@ -76,14 +74,15 @@ gdb
 
 
 (gdb) layout n
-#<C-L>   刷新窗口
-#<C-x-a> 回到传统模式，即退出layout，回到执行layout之前的调试窗口。
 (gdb) fs n
 (gdb) winheight src -5
 (gdb) winheight asm -5
 (gdb) winheight cmd -5
+    # <C-L>   刷新窗口
+    # <C-x-a> 回到传统模式，即退出layout，回到执行layout之前的调试窗口。
 ```
 
+> [!TIP]
 > s 相当于其它调试器中的“Step Into (单步跟踪进入)”；
 >
 > n 相当于其它调试器中的“Step Over (单步跟踪)”
@@ -112,13 +111,13 @@ bt
 
 ### `until [Num]`
 
-(gdb) continue run until 到 Num 行；
+continue run until Num line；
 
 ```bash
 (gdb) until 1735
 ```
 
-### `watch [variate]` and  `ignore [No. of breakpoints] [time]`
+### `watch [variate]` and  `ignore [No. of breakpoints] [times]`
 
 ```bash
 (gdb) watch Index
@@ -126,46 +125,8 @@ bt
 (gdb) c
 ```
 
-**For example**:
+### `set print elements 0` to print full string
 
-```c
-(gdb) until 1731
-(anonymous namespace)::MPPassManager::runOnModule (this=0x120125810, M=...)
-    at /home/loongson/work/gpu/llvm-toolchain-8-8.0.1/llvm/lib/IR/LegacyPassManager.cpp:1731
-1731      for (unsigned Index = 0; Index < getNumContainedPasses(); ++Index) {
-(gdb) watch Index
-Hardware watchpoint 6: Index
-(gdb) ignore 6 10
-Will ignore next 10 crossings of breakpoint 6.
-(gdb) c
-Continuing.
-
-Thread 1 "tutorial01_firs" hit Hardware watchpoint 6: Index
-
-Old value = 9
-New value = 10
-0x000000fff1455b14 in (anonymous namespace)::MPPassManager::runOnModule (this=0x120125810, M=...)
-    at /home/loongson/work/gpu/llvm-toolchain-8-8.0.1/llvm/lib/IR/LegacyPassManager.cpp:1731
-1731      for (unsigned Index = 0; Index < getNumContainedPasses(); ++Index) {
-(gdb) n
-1732        ModulePass *MP = getContainedPass(Index);
-(gdb) p Index
-$63 = 10
-(gdb) ignore 6 3
-Will ignore next 3 crossings of breakpoint 6.
-(gdb) c
-Continuing.
-
-Thread 1 "tutorial01_firs" hit Hardware watchpoint 6: Index
-
-Old value = 13
-New value = 14
-0x000000fff1455b14 in (anonymous namespace)::MPPassManager::runOnModule (this=0x120125810, M=...)
-    at /home/loongson/work/gpu/llvm-toolchain-8-8.0.1/llvm/lib/IR/LegacyPassManager.cpp:1731
-1731      for (unsigned Index = 0; Index < getNumContainedPasses(); ++Index) {
-(gdb) n
-1732        ModulePass *MP = getContainedPass(Index);
-(gdb) p Index
-$64 = 14
-(gdb) 
+```text
+(gdb) set print elements 0
 ```

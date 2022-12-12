@@ -1,0 +1,1 @@
+qemu-system-i386 -kernel /root/jslinux/obj/linux-x86-basic/arch/i386/boot/bzImage -drive file=hda_hasbacking_file1.qcow2,if=ide,cache=none -append "console=ttyS0 root=/dev/sda rw rdinit=/sbin/init notsc=1"  -nographic -boot order=dc,menu=on -net nic,vlan=0,macaddr=52:54:00:12:34:23,model=e1000,addr=08 -net socket,name=mysock2,connect=192.168.139.85:1234 

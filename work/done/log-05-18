@@ -1,0 +1,353 @@
+[00837/12595] skip: 381, pass: 402, warn:5, fail:48, crash: 1
+
+-----------------------------------
+systemctl start lightdm[12245.087699] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 2 pasid 32768 for process Xorg pid 2759 thread Xorg:gsgpu_cs0 pid 2773
+[12245.099548] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x2101000103a14000
+[12245.107587] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x2101
+[17815.497350] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 2 pasid 32771 for process initialized-vbo pid 15571 thread init:gsgpu_cs0 pid 15577
+[17815.510325] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0xa1110001ff1d6000
+[17815.518365] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0xA111
+[17815.525367] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 2 pasid 32771 for process initialized-vbo pid 15571 thread init:gsgpu_cs0 pid 15577
+[17815.538330] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0xa1010001ff1d6000
+[17815.546368] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0xA101
+[17815.553370] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 2 pasid 32771 for process initialized-vbo pid 15571 thread init:gsgpu_cs0 pid 15577
+[17815.566333] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0xa1010001ff298000
+[17815.574371] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0xA101
+[17859.112282] [drm:gsgpu_job_timedout [gsgpu]] *ERROR* ring sdma0 timeout, signaled seq=2046438, emitted seq=2046440
+[17859.122585] gsgpu 0000:00:06.0: GPU reset begin!
+[17859.160224] gsgpu 0000:00:06.0: GPU reset succeeded, trying to resume
+[17859.296225] [drm] PCIE GART of 256M enabled (table at 0x0001000000000000).
+[17859.544231] [drm] PCIE ZIP META of 2M enabled (table at 0x0001000000200000).
+[17860.584282] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[17860.593477] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[17860.602668] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[17860.611857] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[17860.621046] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[17860.630235] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[17860.639423] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[17860.648612] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[17860.657801] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[17860.667027] [drm] sdma0 ib test on ring 1 succeeded
+[17860.671873] [drm] recover vram bo from shadow start
+[17860.676718] [drm] recover vram bo from shadow done
+[17860.681480] gsgpu 0000:00:06.0: GPU reset(1) succeeded!
+[17957.290683] do_page_fault(): sending SIGSEGV to gl-1.0-rendermo for invalid read access from 0000000000000000
+[17957.300578] epc = 000000fff089bfbc in libLLVM-6.0.so.1[ffeed7c000+3614000]
+[17957.307459] ra  = 000000fff36122ec in gsgpu_dri.so[fff2cac000+b3c000]
+[17996.075321] [drm:gsgpu_job_timedout [gsgpu]] *ERROR* ring sdma0 timeout, signaled seq=2114931, emitted seq=2114934
+[17996.085622] gsgpu 0000:00:06.0: GPU reset begin!
+[17996.103304] gsgpu 0000:00:06.0: GPU reset succeeded, trying to resume
+[17996.239278] [drm] PCIE GART of 256M enabled (table at 0x0001000000000000).
+[17996.463281] [drm] PCIE ZIP META of 2M enabled (table at 0x0001000000200000).
+[17997.503359] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[17997.512555] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[17997.521745] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[17997.530936] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[17997.540125] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[17997.549315] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[17997.558504] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[17997.567693] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[17997.576883] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[17997.586118] [drm] sdma0 ib test on ring 1 succeeded
+[17997.590964] [drm] recover vram bo from shadow start
+[17997.595809] [drm] recover vram bo from shadow done
+[17997.600578] gsgpu 0000:00:06.0: GPU reset(2) succeeded!
+[18020.134873] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 2 pasid 32774 for process tex3d-maxsize pid 16317 thread tex3:gsgpu_cs0 pid 16318
+[18020.147673] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x2101000103078000
+[18020.155711] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x2101
+[18020.184364] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 2 pasid 32774 for process tex3d-maxsize pid 16317 thread tex3:gsgpu_cs0 pid 16318
+[18020.197157] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x2101000102078000
+[18020.205196] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x2101
+[18020.234615] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 1 pasid 32774 for process tex3d-maxsize pid 16317 thread tex3:gsgpu_cs0 pid 16318
+[18020.247407] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x2101000102098000
+[18020.255446] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x2101
+[18020.278114] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 1 pasid 32774 for process tex3d-maxsize pid 16317 thread tex3:gsgpu_cs0 pid 16318
+[18020.290906] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x21010001020b8000
+[18020.298943] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x2101
+[18020.322363] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 1 pasid 32774 for process tex3d-maxsize pid 16317 thread tex3:gsgpu_cs0 pid 16318
+[18020.335155] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x21010001020d8000
+[18020.343193] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x2101
+[18020.367366] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 1 pasid 32774 for process tex3d-maxsize pid 16317 thread tex3:gsgpu_cs0 pid 16318
+[18020.380158] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x21010001020f8000
+[18020.388197] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x2101
+[18020.411614] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 3 pasid 32774 for process tex3d-maxsize pid 16317 thread tex3:gsgpu_cs0 pid 16318
+[18020.424406] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x2101000102118000
+[18020.432443] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x2101
+[18020.455865] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 3 pasid 32774 for process tex3d-maxsize pid 16317 thread tex3:gsgpu_cs0 pid 16318
+[18020.468656] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x2101000102138000
+[18020.476693] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x2101
+[18020.500114] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 3 pasid 32774 for process tex3d-maxsize pid 16317 thread tex3:gsgpu_cs0 pid 16318
+[18020.512905] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x2101000102158000
+[18020.520943] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x2101
+[18020.544364] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 1 pasid 32774 for process tex3d-maxsize pid 16317 thread tex3:gsgpu_cs0 pid 16318
+[18020.557155] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x2101000102178000
+[18020.565192] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x2101
+[18111.470263] mmu_v1_0_process_interrupt: 6 callbacks suppressed
+[18111.470271] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 3 pasid 32774 for process fbo-array pid 16874 thread fbo-:gsgpu_cs0 pid 16875
+[18111.488517] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x3301000102078000
+[18111.496556] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x3301
+[18111.518255] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 1 pasid 32774 for process fbo-array pid 16874 thread fbo-:gsgpu_cs0 pid 16875
+[18111.530702] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x330100010207a000
+[18111.538740] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x3301
+[18111.560255] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 3 pasid 32774 for process fbo-array pid 16874 thread fbo-:gsgpu_cs0 pid 16875
+[18111.572701] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x330100010207c000
+[18111.580740] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x3301
+[18111.602254] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 2 pasid 32774 for process fbo-array pid 16874 thread fbo-:gsgpu_cs0 pid 16875
+[18111.614700] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x330100010207e000
+[18111.622738] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x3301
+[18112.026767] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 1 pasid 32774 for process array-texture pid 16876 thread arra:gsgpu_cs0 pid 16877
+[18112.039568] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x33010001021ec000
+[18112.047606] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x3301
+[18112.069507] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 1 pasid 32774 for process array-texture pid 16876 thread arra:gsgpu_cs0 pid 16877
+[18112.082299] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x33010001021f0000
+[18112.090338] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x3301
+[18112.112257] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 1 pasid 32774 for process array-texture pid 16876 thread arra:gsgpu_cs0 pid 16877
+[18112.125048] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x33010001021f4000
+[18112.133087] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x3301
+[18112.155007] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 1 pasid 32774 for process array-texture pid 16876 thread arra:gsgpu_cs0 pid 16877
+[18112.167799] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x33010001021f8000
+[18112.175837] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x3301
+[18145.106376] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 2 pasid 32774 for process primitive-resta pid 17110 thread prim:gsgpu_cs0 pid 17111
+[18145.119349] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x41010008fd0ffd00
+[18145.127389] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x4101
+[18392.232204] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 2 pasid 32774 for process egl-create-larg pid 17220 thread egl-:gsgpu_cs0 pid 17221
+[18392.245182] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x3111000102f0a000
+[18392.253220] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x3111
+[18392.260223] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 2 pasid 32774 for process egl-create-larg pid 17220 thread egl-:gsgpu_cs0 pid 17221
+[18392.273186] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x311100010484e800
+[18392.281224] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x3111
+[18392.288226] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 2 pasid 32774 for process egl-create-larg pid 17220 thread egl-:gsgpu_cs0 pid 17221
+[18392.301189] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x310100010484e800
+[18392.309227] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x3101
+[18414.132579] [drm:gsgpu_job_timedout [gsgpu]] *ERROR* ring gfx timeout, signaled seq=4374274, emitted seq=4374274
+[18414.142708] gsgpu 0000:00:06.0: GPU reset begin!
+[18414.156544] gsgpu 0000:00:06.0: GPU reset succeeded, trying to resume
+[18414.268541] [drm] PCIE GART of 256M enabled (table at 0x0001000000000000).
+[18414.275407] [drm:gsgpu_device_gpu_recover [gsgpu]] *ERROR* VRAM is lost!
+[18414.500545] [drm] PCIE ZIP META of 2M enabled (table at 0x0001000000200000).
+[18415.552606] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[18415.561814] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[18415.571005] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[18415.580196] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[18415.589387] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[18415.598578] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[18415.607767] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[18415.616958] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[18415.626149] [drm:dc_interrupt_enable [gsgpu]] *ERROR* dc_interrupt_enable Can not support this irq 0 
+[18415.635387] [drm] sdma0 ib test on ring 1 succeeded
+[18415.640233] [drm] recover vram bo from shadow start
+[18415.645079] [drm] recover vram bo from shadow done
+[18415.649842] gsgpu 0000:00:06.0: GPU reset(3) succeeded!
+[18445.810473] [drm:gsgpu_cs_ioctl [gsgpu]] *ERROR* Failed to initialize parser !
+[19580.955683] [drm:gsgpu_cs_ioctl [gsgpu]] *ERROR* Failed to initialize parser !
+
+
+
+
+
+
+
+
+
+
+[00095/12595] skip: 8, pass: 82, warn: 2, fail: 3
+---------------------------------------------
+root@loongson-pc:/home/loongson# [ 2549.899985] do_page_fault(): sending SIGSEGV to textureGather for invalid read access from 00000000000000a8
+[ 2549.909685] epc = 000000fff39135e0 in gsgpu_dri.so[fff348c000+b3c000]
+[ 2549.916096] ra  = 000000fff39135d8 in gsgpu_dri.so[fff348c000+b3c000]
+[ 2550.004009] do_page_fault(): sending SIGSEGV to textureGather for invalid read access from 00000000000000a8
+[ 2550.013713] epc = 000000fff39c75e0 in gsgpu_dri.so[fff3540000+b3c000]
+[ 2550.020129] ra  = 000000fff39c75d8 in gsgpu_dri.so[fff3540000+b3c000]
+[ 2550.107739] do_page_fault(): sending SIGSEGV to textureGather for invalid read access from 00000000000000a8
+[ 2550.117436] epc = 000000fff43b75e0 in gsgpu_dri.so[fff3f30000+b3c000]
+[ 2550.123845] ra  = 000000fff43b75d8 in gsgpu_dri.so[fff3f30000+b3c000]
+[ 2550.212945] do_page_fault(): sending SIGSEGV to textureGather for invalid read access from 00000000000000a8
+[ 2550.222647] epc = 000000fff46c35e0 in gsgpu_dri.so[fff423c000+b3c000]
+[ 2550.229056] ra  = 000000fff46c35d8 in gsgpu_dri.so[fff423c000+b3c000]
+[ 2550.316090] do_page_fault(): sending SIGSEGV to textureGather for invalid read access from 00000000000000a8
+[ 2550.325790] epc = 000000fff426f5e0 in gsgpu_dri.so[fff3de8000+b3c000]
+[ 2550.332201] ra  = 000000fff426f5d8 in gsgpu_dri.so[fff3de8000+b3c000]
+[ 2550.420824] do_page_fault(): sending SIGSEGV to textureGather for invalid read access from 00000000000000a8
+[ 2550.430525] epc = 000000fff31ab5e0 in gsgpu_dri.so[fff2d24000+b3c000]
+[ 2550.436935] ra  = 000000fff31ab5d8 in gsgpu_dri.so[fff2d24000+b3c000]
+[ 2550.523984] do_page_fault(): sending SIGSEGV to textureGather for invalid read access from 00000000000000a8
+[ 2550.533683] epc = 000000fff359b5e0 in gsgpu_dri.so[fff3114000+b3c000]
+[ 2550.540094] ra  = 000000fff359b5d8 in gsgpu_dri.so[fff3114000+b3c000]
+
+
+
+-------------------------------
+Test requires extension GL_ARB_compute_shader which is not available
+/home/loongson/gpu/piglit/bin/shader_runner /home/loongson/gpu/piglit/test/spec/arb_compute_shader/execution/basic-ssbo.shader_test -auto -fbo
+
+
+[ 4945.430567] [drm] gaoliang: src:3                                                                                                                                                                                                                                              
+[ 4945.433852] [drm] gaoliang: src:1                                                                                                                                                                                                                                              
+[ 4945.437142] [drm] gaoliang: src:2                                                                                                                                                                                                                                              
+[ 4945.440433] [drm] gaoliang: src:3                                                                                                                                                                                                                                              
+[ 4945.443791] [drm] sdma0 ib test on ring 1 succeeded                                                                                                                                                                                                                            
+[ 4945.448635] [drm] recover vram bo from shadow start                                                                                                                                                                                                                            
+[ 4945.453481] [drm] recover vram bo from shadow done                                                                                                                                                                                                                             
+[ 4945.458243] gsgpu 0000:00:06.0: GPU reset(1) succeeded!                                                                                                                                                                                                                        
+[ 4945.480800] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 3 pasid 32772 for process glsl-reload-sou pid 9622 thread glsl:gsgpu_cs0 pid 9628                                                                                                                                
+[ 4945.493593] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x4101000000000000                                                                                                                                                                                       
+[ 4945.501631] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x4101                                                                                                                                                                                                   
+[ 4955.534120] [drm:gsgpu_job_timedout] *ERROR* ring gfx timeout, signaled seq=1133282, emitted seq=1133285                                                                                                                                                                       
+[ 4955.543563] gsgpu 0000:00:06.0: GPU reset begin!                                                                                                                                                                                                                               
+[ 4955.548157] [drm:gsgpu_job_timedout] *ERROR* ring sdma0 timeout, signaled seq=744975, emitted seq=744977                                                                                                                                                                       
+[ 4955.557594] gsgpu 0000:00:06.0: GPU reset begin!                                                                                                                                                                                                                               
+[ 4955.574117] gsgpu 0000:00:06.0: GPU reset succeeded, trying to resume                                                                                                                                                                                                          
+[ 4955.686113] [drm] PCIE GART of 256M enabled (table at 0x0001000000000000).                                                                                                                                                                                                     
+[ 4955.898112] [drm] PCIE ZIP META of 2M enabled (table at 0x0001000000200000).                                                                                                                                                                                                   
+[ 4956.938115] [drm] gaoliang: src:1                                                                                                                                                                                                                                              
+[ 4956.941401] [drm] gaoliang: src:2                                                                                                                                                                                                                                              
+[ 4956.944693] [drm] gaoliang: src:3                                                                                                                                                                                                                                              
+[ 4956.947983] [drm] gaoliang: src:1                                                                                                                                                                                                                                              
+[ 4956.951272] [drm] gaoliang: src:2                                                                                                                                                                                                                                              
+[ 4956.954561] [drm] gaoliang: src:3                                                                                                                                                                                                                                              
+[ 4956.957847] [drm] gaoliang: src:1                                                                                                                                                                                                                                              
+[ 4956.961136] [drm] gaoliang: src:2                                                                                                                                                                                                                                              
+[ 4956.964425] [drm] gaoliang: src:3                                                                                                                                                                                                                                              
+[ 4957.998116] [drm:gfx_v8_0_ring_test_ib] *ERROR* gsgpu: IB test timed out.                                                                                                                                                                                                      
+[ 4958.004863] [drm:gsgpu_ib_ring_tests] *ERROR* gsgpu: failed testing IB on GFX ring (-110).                                                                                                                                                                                     
+[ 4958.013078] gsgpu 0000:00:06.0: ib ring test failed (-110).                                                                                                                                                                                                                    
+[ 4958.030115] gsgpu 0000:00:06.0: GPU reset succeeded, trying to resume                                                                                                                                                                                                          
+[ 4958.142113] [drm] PCIE GART of 256M enabled (table at 0x0001000000000000).                                                                                                                                                                                                     
+[ 4958.358112] [drm] PCIE ZIP META of 2M enabled (table at 0x0001000000200000).                                                                                                                                                                                                   
+[ 4959.398114] [drm] gaoliang: src:1                                                                                                                                                                                                                                              
+[ 4959.401401] [drm] gaoliang: src:2                                                                                                                                                                                                                                              
+[ 4959.404691] [drm] gaoliang: src:3                                                                                                                                                                                                                                              
+[ 4959.407984] [drm] gaoliang: src:1                                                                                                                                                                                                                                              
+[ 4959.411273] [drm] gaoliang: src:2                                                                                                                                                                                                                                              
+[ 4959.414562] [drm] gaoliang: src:3                                                                                                                                                                                                                                              
+[ 4959.417848] [drm] gaoliang: src:1                                                                                                                                                                                                                                              
+[ 4959.421136] [drm] gaoliang: src:2                                                                                                                                                                                                                                              
+[ 4959.424425] [drm] gaoliang: src:3
+[ 4959.427772] [drm] sdma0 ib test on ring 1 succeeded
+[ 4959.432617] [drm] recover vram bo from shadow start
+[ 4959.437462] [drm] recover vram bo from shadow done
+[ 4959.442226] gsgpu 0000:00:06.0: GPU reset(2) succeeded!
+[ 4959.653543] irq 42: nobody cared (try booting with the "irqpoll" option)
+[ 4959.660201] CPU: 0 PID: 5774 Comm: kworker/0:2 Not tainted 4.19.190+ #15
+[ 4959.666857] Hardware name: Loongson Loongson-3A5000-HV-7A-1w-V1.0-demo, BIOS Loongson-PMON-V3.3-20220513 05/13/2022
+[ 4959.677232] Workqueue: events drm_sched_job_timedout
+[ 4959.682160] Stack : 90000000016038e8 9000000001025594 9000000126524000 90000002780cfaf0
+[ 4959.690113]         0000000000000000 90000002780cfaf0 000000000000008c 90000000009cf4a8
+[ 4959.698065]         90000000816058ff 0000000000000010 ffffffffffffffff 0000000000000000
+[ 4959.706017]         0000000000000001 0000000000000007 0000000000000006 0000000000000007
+[ 4959.713968]         900000027a0006e0 0000000000000008 0000000000000000 0000000000000000
+[ 4959.721920]         0000000000000353 0000000278a20000 000000000000003f 0000000000000000
+[ 4959.729872]         00000000000000b0 0000000000000000 000000000000002a ffffffffffff4000
+[ 4959.737824]         0000000020000000 0000000000000000 0000000000001800 0000000000000001
+[ 4959.745776]         00000000000000b0 0000000000000004 0000000000000000 0000000000071c0c
+[ 4959.753728]         0000000000000800 90000000002087d4 000000fff72ccf28 00000000000000b0
+[ 4959.761680]         ...
+[ 4959.764103] Call Trace:
+[ 4959.766529] [<90000000002087d4>] show_stack+0x2c/0x130
+[ 4959.771634] [<9000000001025594>] dump_stack+0x94/0xc0
+[ 4959.776648] handlers:
+[ 4959.778900] [<00000000f5053fdf>] gsgpu_irq_handler
+[ 4959.783654] Disabling IRQ #42
+
+Message from syslogd@loongson-pc at May 27 17:55:02 ...
+ kernel:[ 4959.783654] Disabling IRQ #42
+[ 4959.822115] gsgpu 0000:00:06.0: GPU reset succeeded, trying to resume
+[ 4959.934112] [drm] PCIE GART of 256M enabled (table at 0x0001000000000000).
+[ 4960.146113] [drm] PCIE ZIP META of 2M enabled (table at 0x0001000000200000).
+[ 4961.186113] [drm] gaoliang: src:1
+[ 4961.189400] [drm] gaoliang: src:2
+[ 4961.192689] [drm] gaoliang: src:3
+[ 4961.195980] [drm] gaoliang: src:1
+[ 4961.199269] [drm] gaoliang: src:2
+[ 4961.202558] [drm] gaoliang: src:3
+[ 4961.205843] [drm] gaoliang: src:1
+[ 4961.209132] [drm] gaoliang: src:2
+[ 4961.212421] [drm] gaoliang: src:3
+[ 4961.374116] [drm] sdma0 ib test on ring 1 succeeded
+[ 4961.378960] [drm] recover vram bo from shadow start
+[ 4961.383804] [drm] recover vram bo from shadow done
+[ 4961.388565] gsgpu 0000:00:06.0: GPU reset(3) succeeded!
+[ 4971.918117] [drm:gsgpu_job_timedout] *ERROR* ring gfx timeout, signaled seq=1133298, emitted seq=1133298
+[ 4971.927546] gsgpu 0000:00:06.0: GPU reset begin!
+[ 4971.942116] gsgpu 0000:00:06.0: GPU reset succeeded, trying to resume
+[ 4972.054112] [drm] PCIE GART of 256M enabled (table at 0x0001000000000000).
+[ 4972.266112] [drm] PCIE ZIP META of 2M enabled (table at 0x0001000000200000).
+[ 4973.306114] [drm] gaoliang: src:1
+[ 4973.309400] [drm] gaoliang: src:2
+[ 4973.312690] [drm] gaoliang: src:3
+[ 4973.315981] [drm] gaoliang: src:1
+[ 4973.319270] [drm] gaoliang: src:2
+[ 4973.322560] [drm] gaoliang: src:3
+[ 4973.325847] [drm] gaoliang: src:1
+[ 4973.329139] [drm] gaoliang: src:2
+[ 4973.332430] [drm] gaoliang: src:3
+[ 4973.442117] [drm] sdma0 ib test on ring 1 succeeded
+[ 4973.446961] [drm] recover vram bo from shadow start
+[ 4973.451809] [drm] recover vram bo from shadow done
+[ 4973.456569] gsgpu 0000:00:06.0: GPU reset(4) succeeded!
+
+
+------------------------------------------------------------------------------------------------
+2022-6-9
+loongson@loongson-pc:~$ [38481.229558] mmu_v1_0_process_interrupt: 3 callbacks suppressed
+[38481.229565] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 1 pasid 32768 for process Xorg pid 2843 thread Xorg:gsgpu_cs0 pid 2857
+[38481.247206] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x2101000103b0c000
+[38481.255244] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x2101
+[38481.276804] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 2 pasid 32768 for process Xorg pid 2843 thread Xorg:gsgpu_cs0 pid 2857
+[38481.288644] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x3101000103b08000
+[38481.296682] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x3101
+[38481.554316] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 1 pasid 32769 for process lbrowser pid 5132 thread lbro:gsgpu_cs0 pid 5142
+[38481.566512] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x21010001051e8000
+[38481.574551] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x2101
+[38481.595484] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 3 pasid 32768 for process Xorg pid 2843 thread Xorg:gsgpu_cs0 pid 2857
+[38481.607325] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x2101000103b0c000
+[38481.615364] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x2101
+[38481.636297] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 2 pasid 32769 for process lbrowser pid 5132 thread lbro:gsgpu_cs0 pid 5142
+[38481.648483] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x310100010515c000
+[38481.656521] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x3101
+[39519.148273] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 3 pasid 32769 for process lbrowser pid 5132 thread lbro:gsgpu_cs0 pid 5142
+[39519.160467] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x210100010515c000
+[39519.168505] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x2101
+[39519.190263] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 2 pasid 32769 for process lbrowser pid 5132 thread lbro:gsgpu_cs0 pid 5142
+[39519.202452] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x310100010bb14000
+[39519.210489] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x3101
+[39519.392770] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 3 pasid 32769 for process lbrowser pid 5132 thread lbro:gsgpu_cs0 pid 5142
+[39519.404963] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x210100010565c000
+[39519.413001] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x2101
+[39519.448265] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 2 pasid 32769 for process lbrowser pid 5132 thread lbro:gsgpu_cs0 pid 5142
+[39519.460452] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x310100010d348000
+[39519.468491] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x3101
+[39520.700778] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 3 pasid 32769 for process lbrowser pid 5132 thread lbro:gsgpu_cs0 pid 5142
+[39520.712972] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x210100010515c000
+[39520.721010] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x2101
+[39520.755519] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 3 pasid 32769 for process lbrowser pid 5132 thread lbro:gsgpu_cs0 pid 5142
+[39520.767707] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x310100010860c000
+[39520.775746] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x3101
+[39956.413983] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 1 pasid 32769 for process lbrowser pid 5132 thread lbro:gsgpu_cs0 pid 5142
+[39956.426180] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x210100010502c000
+[39956.434218] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x2101
+[39956.455971] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 3 pasid 32769 for process lbrowser pid 5132 thread lbro:gsgpu_cs0 pid 5142
+[39956.468158] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x3101000105744000
+[39956.476195] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x3101
+[42000.935796] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 3 pasid 32769 for process lbrowser pid 5132 thread lbro:gsgpu_cs0 pid 5142
+[42000.947992] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x2101000106eec000
+[42000.956030] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x2101
+[42000.991287] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 2 pasid 32769 for process lbrowser pid 5132 thread lbro:gsgpu_cs0 pid 5142
+[42001.003476] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x3101000107474000
+[42001.011513] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x3101
+[43019.889193] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 2 pasid 32769 for process lbrowser pid 5132 thread lbro:gsgpu_cs0 pid 5142
+[43019.901389] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x210100010502c000
+[43019.909428] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x2101
+[43019.944683] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 1 pasid 32769 for process lbrowser pid 5132 thread lbro:gsgpu_cs0 pid 5142
+[43019.956869] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x3101000109f2c000
+[43019.964907] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x3101
+[43020.125439] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 2 pasid 32769 for process lbrowser pid 5132 thread lbro:gsgpu_cs0 pid 5142
+[43020.137629] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x210100010b144000
+[43020.145667] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x2101
+[43020.180934] gsgpu 0000:00:06.0: GPU fault detected: 146  vmid 1 pasid 32769 for process lbrowser pid 5132 thread lbro:gsgpu_cs0 pid 5142
+[43020.193120] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x310100010af9c000
+[43020.201159] gsgpu 0000:00:06.0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x3101
+
+$13 = {{{next = 0x0, prev = 0x0, {dev = 0x900000017c884000, dev_scratch = 10376293547845894144}}, rbnode = {__rb_parent_color = 0, rb_right = 0x0, rb_left = 0x900000017c884000}, list = {next = 0x0, prev = 0x0}}, {sk = 0x0, ip_defrag_offset = 0}, {tstamp = 0, skb_mstamp = 0}, cb = '\000' <repeats 47 times>, {{_skb_refdst = 0, destructor = 0x0}, tcp_tsorted_anchor = {next = 0x0, prev = 0x0}}, sp = 0x0, _nfct = 0, nf_bridge = 0x0, len = 42, data_len = 0, mac_len = 0, hdr_len = 0, queue_mapping = 0, __cloned_offset = 0x9000000179b7488e "", cloned = 0 '\000', nohdr = 0 '\000', fclone = 0 '\000', peeked = 0 '\000', head_frag = 0 '\000', xmit_more = 0 '\000', pfmemalloc = 0 '\000', headers_start = 0x9000000179b74890, __pkt_type_offset = 0x9000000179b74890 "", pkt_type = 0 '\000', ignore_df = 0 '\000', nf_trace = 0 '\000', ip_summed = 0 '\000', ooo_okay = 0 '\000', l4_hash = 0 '\000', sw_hash = 0 '\000', wifi_acked_valid = 0 '\000', wifi_acked = 0 '\000', no_fcs = 0 '\000', encapsulation = 0 '\000', encap_hdr_csum = 0 '\000', csum_valid = 0 '\000', csum_complete_sw = 0 '\000', csum_level = 0 '\000', csum_not_inet = 0 '\000', dst_pending_confirm = 0 '\000', ndisc_nodetype = 0 '\000', ipvs_property = 0 '\000', inner_protocol_type = 0 '\000', remcsum_offload = 0 '\000', tc_skip_classify = 0 '\000', tc_at_ingress = 0 '\000', tc_redirected = 0 '\000', tc_from_ingress = 0 '\000', tc_index = 0, {csum = 0, {csum_start = 0, csum_offset = 0}}, priority = 0, skb_iif = 0, hash = 0, vlan_proto = 0, vlan_tci = 0, {napi_id = 0, sender_cpu = 0}, secmark = 0, {mark = 0, reserved_tailroom = 0}, { inner_protocol = 0, inner_ipproto = 0 '\000'}, inner_transport_header = 0, inner_network_header = 0, inner_mac_header = 0, protocol = 1544, transport_header = 65535, network_header = 16, mac_header = 65535, headers_end = 0x9000000179b748c8, tail = 44, end = 192, head = 0x9000000179b7c800 "", data = 0x9000000179b7c802 "\226\230\061\225ˍ\n\371RP2\253\b\006", truesize = 768, users = { refs = {counter = 1}}}
+
+$2 = {{{next = 0x0, prev = 0x0, {dev = 0x900000017c884000, dev_scratch = 10376293547845894144}}, rbnode = {__rb_parent_color = 0, rb_right = 0x0, rb_left = 0x900000017c884000}, list = {next = 0x0, prev = 0x0}}, {sk = 0x0, ip_defrag_offset = 0}, {tstamp = 0, skb_mstamp = 0}, cb = '\000' <repeats 47 times>, {{_skb_refdst = 0, destructor = 0x0}, tcp_tsorted_anchor = {next = 0x0, prev = 0x0}}, sp = 0x0, _nfct = 0, nf_bridge = 0x0, len = 94, data_len = 0, mac_len = 0, hdr_len = 0, queue_mapping = 0, __cloned_offset = 0x9000000179b7418e "", cloned = 0 '\000', nohdr = 0 '\000', fclone = 0 '\000', peeked = 0 '\000', head_frag = 0 '\000', xmit_more = 0 '\000', pfmemalloc = 0 '\000', headers_start = 0x9000000179b74190, __pkt_type_offset = 0x9000000179b74190 "", pkt_type = 0 '\000', ignore_df = 0 '\000', nf_trace = 0 '\000', ip_summed = 0 '\000', ooo_okay = 0 '\000', l4_hash = 0 '\000', sw_hash = 0 '\000', wifi_acked_valid = 0 '\000', wifi_acked = 0 '\000', no_fcs = 0 '\000', encapsulation = 0 '\000', encap_hdr_csum = 0 '\000', csum_valid = 0 '\000', csum_complete_sw = 0 '\000', csum_level = 0 '\000', csum_not_inet = 0 '\000', dst_pending_confirm = 0 '\000', ndisc_nodetype = 0 '\000', ipvs_property = 0 '\000', inner_protocol_type = 0 '\000', remcsum_offload = 0 '\000', tc_skip_classify = 0 '\000', tc_at_ingress = 0 '\000', tc_redirected = 0 '\000', tc_from_ingress = 0 '\000', tc_index = 0, {csum = 0, {csum_start = 0, csum_offset = 0}}, priority = 0, skb_iif = 0, hash = 0, vlan_proto = 0, vlan_tci = 0, {napi_id = 0, sender_cpu = 0}, secmark = 0, {mark = 0, reserved_tailroom = 0}, { inner_protocol = 0, inner_ipproto = 0 '\000'}, inner_transport_header = 0, inner_network_header = 0, inner_mac_header = 0, protocol = 0, transport_header = 65535, network_header = 0, mac_header = 65535, headers_end = 0x9000000179b741c8, tail = 160, end = 192, head = 0x9000000178df9c00 "", data = 0x9000000178df9c42 "33", truesize = 768, users = {refs = {counter = 1}}}

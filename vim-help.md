@@ -140,6 +140,8 @@ J            # 去掉该行的换行符
 :m,n>   # 向>缩进
 :m,n<   # 向<缩进
 :%retab!  # tab <-> 空格
+
+:e!     # auto reload file
 ```
 
 ### tab <-> space

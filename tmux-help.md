@@ -68,6 +68,6 @@ tmux a -t "name"
 tmux kill-session "name"
 ```
 
-```
+```bash
 prefix x # 杀死窗格
 ```

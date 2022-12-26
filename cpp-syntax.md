@@ -1,10 +1,8 @@
-# Grammar
+# C++ syntax
 
-## C++ GRAMMAR
+## optimize function
 
-### optimize function
-
-写法1: 只针对1个function。
+方法一: 只针对1个function
 
 ```cpp
 __attribute__((optimize("O0")))
@@ -25,7 +23,7 @@ int main ()
 }
 ```
 
-写法2：包含在里面的code都不会被optimize。
+方法二：包含在里面的code都不会被optimize
 
 > [!TIP]
 > 注意！这个写法不一定要以function为范围，可以任意选取一段code。
@@ -50,12 +48,6 @@ int main ()
     return 0;
 }
 ```
-
-### enums Start At 0
-
-It will start at 0 and increment up along the way.
-
-## OPTIMIZE
 
 ```cpp
 // toggle this

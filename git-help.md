@@ -63,3 +63,9 @@ git push origin HEAD --force # 强制推送到远端
 ```bash
 git log -L :runOnModule:lib/Analysis/CallGraphSCCPass.cpp
 ```
+
+## `git log --author=authorname`
+
+```bash
+git log --author="gaoliang"
+```

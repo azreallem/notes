@@ -88,3 +88,12 @@ objdump -tTd xxx.so
 sudo mount /dev/sdb1 ~/new
 sudo umount ~/new
 ```
+
+## notes
+
+```bash
+dmesg
+
+sudo dhclient -r
+sudo dhclient
+```

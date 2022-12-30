@@ -170,9 +170,9 @@ J            # 去掉该行的换行符
 > [!TIP]
 > ``<C-v> select chars, <yy> to copy, and then use <C-v> and <p> to put it.``
 
-### plugins
+## plugins
 
-#### 折叠相关
+### 折叠相关
 
 ```bash
 z f %  # 折叠 fold %
@@ -180,7 +180,7 @@ z o   # 展开 open
 z c   # 折叠 close
 ```
 
-#### vim-markdown
+### vim-markdown
 
 - zr: reduces fold level throughout the buffer
 - zR: opens all folds
@@ -198,26 +198,36 @@ cscope -Rbq
 file cscope.out
 :cs add {file|dir} [pre-path] [flags]
 cs find {querytype} {name}
-# 0或s：查找这个(指name参数，下同)C符号。
-# 1或g：查找这个定义。
-# 2或d：查找被这个函数调用的函数。
-# 3或c：查找调用该函数的函数。
-# 4或t：查找这个文本字符串。
-# 6或e: 查找这个egrep的pattern。
-# 7或f：查找这个文件。
-# 8或i：查找#include了这个文件的所有文件。
+    # 0或s：查找这个(指name参数，下同)C符号。
+    # 1或g：查找这个定义。
+    # 2或d：查找被这个函数调用的函数。
+    # 3或c：查找调用该函数的函数。
+    # 4或t：查找这个文本字符串。
+    # 6或e: 查找这个egrep的pattern。
+    # 7或f：查找这个文件。
+    # 8或i：查找#include了这个文件的所有文件。
 ```
 
 ### gitgutter
 
-> [c
->
-> ]c
->
-> :GitGutterToggle
->
-> :GitGutterDiffOrig
->
-> :GitGutterQuickFix
->
+> [c  
+> ]c  
+> :GitGutterToggle  
+> :GitGutterDiffOrig  
+> :GitGutterQuickFix  
 > :copen
+
+## My shortcuts
+
+> [!NOTE]
+> <kbd>win</kbd>+<kbd>shift</kbd>+<kbd>-></kbd>将当前窗口移动到另一个屏幕。  
+> <kbd>\<F1\></kbd> cs find [...]  
+> <kbd>\<F2\></kbd> vert scs find [...]  
+> <kbd>\<F3\></kbd> copen  
+> <kbd>\<F4\></kbd> git diff  
+> <kbd>\<F9\></kbd> pastetoggle  
+> <kbd>\<Ctrl\></kbd>+<kbd>j</kbd> TabLeft  
+> <kbd>\<Ctrl\></kbd>+<kbd>k</kbd> TabRight  
+> <kbd>\>ghs</kbd> git stage  
+> <kbd>\>ghu</kbd> git undo  
+> <kbd>\>ghp</kbd> git preview  

@@ -3,5 +3,11 @@
         "makefile",
         "ssh_config",
         "vimrc"
+    ],
+    "cSpell.words": [
+        "kbd"
+    ],
+    "cSpell.ignoreWords": [
+        "kbd"
     ]
 }

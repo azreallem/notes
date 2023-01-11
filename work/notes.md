@@ -27,11 +27,26 @@ set run "ifconfig syn0 10.20.4.234;load http://10.20.4.61/vm;g console=ttyS0,115
 $run
 ```
 
+### ifconfig
+
+```bash
+# host1
+ifconfig enp0s3f0 192.168.1.2/24
+# host2
+ifconfig enp0s3f1 192.168.1.3/24
+```
+
 ### LinuxPTP
 
 ```bash
-# 主时钟： 
+# host1: 主时钟
 ptp4l -i enp0s3f1 -m -H -2 -P
-# 从时钟： 
-ptp4l -i enp0s3f1 -m -H -s -2 -P
+# host2: 从时钟
+ptp4l -i enp0s3f1 -m -H -2 -P -s
+```
+
+## Driver
+
+```c
+printk("file %s, line %d\n", __FILE__, __LINE__);
 ```

@@ -208,7 +208,7 @@ cs find {querytype} {name}
     # 8或i：查找#include了这个文件的所有文件。
 ```
 
-### gitgutter
+### GitGutter
 
 > [c  
 > ]c  
@@ -220,14 +220,15 @@ cs find {querytype} {name}
 ## My shortcuts
 
 > [!NOTE]
-> <kbd>win</kbd>+<kbd>shift</kbd>+<kbd>-></kbd>将当前窗口移动到另一个屏幕。  
-> <kbd>\<F1\></kbd> cs find [...]  
-> <kbd>\<F2\></kbd> vert scs find [...]  
-> <kbd>\<F3\></kbd> copen  
-> <kbd>\<F4\></kbd> git diff  
-> <kbd>\<F9\></kbd> pastetoggle  
-> <kbd>\<Ctrl\></kbd>+<kbd>j</kbd> TabLeft  
-> <kbd>\<Ctrl\></kbd>+<kbd>k</kbd> TabRight  
-> <kbd>\>ghs</kbd> git stage  
-> <kbd>\>ghu</kbd> git undo  
-> <kbd>\>ghp</kbd> git preview  
+> <kbd>\<F1\></kbd>     cs find [...]  
+> <kbd>\<F2\></kbd>     vert scs find [...]  
+> <kbd>\<F3\></kbd>     copen  
+> <kbd>\<F4\></kbd>     git diff  
+> <kbd>\<F9\></kbd>     pastetoggle  
+> <kbd>\<Ctrl\></kbd>+<kbd>j</kbd>  TabLeft  
+> <kbd>\<Ctrl\></kbd>+<kbd>k</kbd>  TabRight  
+> <kbd>ghs</kbd>    git stage  
+> <kbd>ghu</kbd>    git undo  
+> <kbd>ghp</kbd>    git preview  
+> <kbd>gj</kbd>     git next hunk  
+> <kbd>gk</kbd>     git next hunk  
